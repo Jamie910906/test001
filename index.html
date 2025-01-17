@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>login</title>
+    <script defer src="index.min.js"></script>
 </head>
 <body>
-    <h1>欢迎来到主页</h1>
-    <p>您已成功通过验证码验证！</p>
+    <h1>输入验证码</h1>
+    <form onsubmit="event.preventDefault(); verifyCode();">
+        <input type="text" id="code" placeholder="请输入验证码" maxlength="6">
+        <button type="submit">验证</button>
+    </form>
 </body>
 </html>

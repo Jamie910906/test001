@@ -20,7 +20,7 @@ async function verifyCode() {
     // 对比用户输入的哈希值和预设哈希值
     if (inputHash === correctHash) {
         // 验证通过，跳转到 index.html
-        window.location.href = "index.html";
+        window.location.href = "main.html";
     } else {
         // 验证失败
         alert("验证码错误，请重新输入！");
